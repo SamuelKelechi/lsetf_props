@@ -1,0 +1,19 @@
+.CardHolder {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.CardWrapper {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.DownHolder {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

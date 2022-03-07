@@ -1,23 +1,34 @@
-import React from 'react'
-import Property from './Component/Property'
+import React from 'react';
+import Card from './Components/Card'
+import Num1 from './Components/Img/2.webp'
+import Num2 from './Components/Img/1.webp'
+import Num3 from './Components/Img/3.webp'
 
 function App () {
   return(
     <>
-      <div>
-        HELLO World
-        <Property col="green" content="Hi, am the first Props Component"/>
 
-        <div>Am not among the props component</div>
-        <Property content="Hi, am the Second Props Component"/>
-        <Property col="pink" content="Hi, am the Third Props Component"/>
-        <Property content="Hi, am the Fourth Props Component"/>
-        <Property col="blue" content="Hello" direct="center"/>
-        <Property content="Have Changed"/>
-        <Property col="yellow" content="Good to go"/>
+        <Card main="Tynker Junior" 
+        text="Tap-Tap picture coding with voice-overs. Pre-readers solve story-based puzzles and build their first programs in coding sandboxes. Ages 5-7"
+        para="2,200+ reviews"
+        Avatar={Num1}
+        col='green' 
+        />
 
-      </div>
+
+        <Card main="Tynker" 
+        Avatar={Num2} 
+        col='blue' 
+        text="Drag-and-drop block coding with a full-featured workshop. Build games and apps, compose music and art, control smart devices, and much, much more. Ages 6-11"
+        />
+
+        <Card main="Mod Creator" Avatar={Num3}
+        col='pink' 
+        
+        />
     </>
   )
 }
 export default App
+
+
